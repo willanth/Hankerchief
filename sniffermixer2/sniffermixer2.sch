@@ -72,8 +72,8 @@ $Comp
 L RF:Si4464 U?
 U 1 1 60E0688A
 P 8400 5050
-F 0 "U?" H 8650 5850 50  0000 C CNN
-F 1 "Si4464" H 8750 5750 50  0000 C CNN
+F 0 "U?" H 8600 4400 50  0000 C CNN
+F 1 "Si4464" H 8700 4300 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.6x2.6mm_ThermalVias" H 8400 6250 50  0001 C CNN
 F 3 "https://www.silabs.com/documents/public/data-sheets/Si4464-63-61-60.pdf" H 8100 4950 50  0001 C CNN
 	1    8400 5050
@@ -82,23 +82,23 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x15 J?
 U 1 1 60E089F9
-P 4450 3000
-F 0 "J?" H 4530 3042 50  0000 L CNN
-F 1 "Conn_01x15" H 4530 2951 50  0000 L CNN
-F 2 "" H 4450 3000 50  0001 C CNN
-F 3 "~" H 4450 3000 50  0001 C CNN
-	1    4450 3000
+P 1700 3000
+F 0 "J?" H 1780 3042 50  0000 L CNN
+F 1 "Conn_01x15" H 1780 2951 50  0000 L CNN
+F 2 "" H 1700 3000 50  0001 C CNN
+F 3 "~" H 1700 3000 50  0001 C CNN
+	1    1700 3000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x15 J?
 U 1 1 60E0A0A8
-P 3400 3000
-F 0 "J?" H 3480 3042 50  0000 L CNN
-F 1 "Conn_01x15" H 3480 2951 50  0000 L CNN
-F 2 "" H 3400 3000 50  0001 C CNN
-F 3 "~" H 3400 3000 50  0001 C CNN
-	1    3400 3000
+P 2900 3000
+F 0 "J?" H 2980 3042 50  0000 L CNN
+F 1 "Conn_01x15" H 2980 2951 50  0000 L CNN
+F 2 "" H 2900 3000 50  0001 C CNN
+F 3 "~" H 2900 3000 50  0001 C CNN
+	1    2900 3000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -352,24 +352,375 @@ Wire Wire Line
 $Comp
 L Device:Crystal Y?
 U 1 1 60E29632
-P 7850 4550
-F 0 "Y?" H 7850 4374 50  0000 C CNN
-F 1 "Crystal" V 7895 4681 50  0001 L CNN
-F 2 "" H 7850 4550 50  0001 C CNN
-F 3 "~" H 7850 4550 50  0001 C CNN
-	1    7850 4550
+P 7850 4750
+F 0 "Y?" H 7750 4650 50  0000 C CNN
+F 1 "Crystal" V 7895 4881 50  0001 L CNN
+F 2 "" H 7850 4750 50  0001 C CNN
+F 3 "~" H 7850 4750 50  0001 C CNN
+	1    7850 4750
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	8000 4750 7700 4750
-Wire Wire Line
-	7700 4750 7700 4550
 Text Label 7700 5150 0    50   ~ 0
-SCLK
+SPI1_SCK
 Text Label 7700 5250 0    50   ~ 0
-SDI
+SPI1_MOSI
 Text Label 7700 5350 0    50   ~ 0
-SDO
+SPI1_MISO
 Text Label 7700 5450 0    50   ~ 0
-~CS
+SPI1_CS
+Text Label 1000 2300 0    50   ~ 0
+USART1_TX
+Text Label 1000 2400 0    50   ~ 0
+USART1_RX
+Text Label 1000 2500 0    50   ~ 0
+RESET
+Text Label 1000 2600 0    50   ~ 0
+GND
+Text Label 1000 2700 0    50   ~ 0
+D2
+Text Label 1000 2800 0    50   ~ 0
+D3
+Text Label 1000 2900 0    50   ~ 0
+D4
+Text Label 1000 3000 0    50   ~ 0
+D5
+Text Label 1000 3100 0    50   ~ 0
+D6
+Text Label 1000 3200 0    50   ~ 0
+D7
+Text Label 1000 3300 0    50   ~ 0
+D8
+Text Label 1000 3400 0    50   ~ 0
+D9
+Text Label 1000 3500 0    50   ~ 0
+SPI1_CS
+Text Label 1000 3600 0    50   ~ 0
+SPI1_MOSI
+Text Label 1000 3700 0    50   ~ 0
+SPI1_MISO
+Text Label 2300 2300 0    50   ~ 0
+VIN
+Text Label 2300 2400 0    50   ~ 0
+GND
+Text Label 2300 2500 0    50   ~ 0
+RESET
+Text Label 2300 2600 0    50   ~ 0
++5VDC
+Text Label 2300 2700 0    50   ~ 0
+A7
+Text Label 2300 2800 0    50   ~ 0
+A6
+Text Label 2300 2900 0    50   ~ 0
+A5
+Text Label 2300 3000 0    50   ~ 0
+A4
+Text Label 2300 3100 0    50   ~ 0
+A3
+Text Label 2300 3200 0    50   ~ 0
+A2
+Text Label 2300 3300 0    50   ~ 0
+A1
+Text Label 2300 3400 0    50   ~ 0
+A0
+Text Label 2300 3500 0    50   ~ 0
+AREF
+Text Label 2300 3600 0    50   ~ 0
++3V3DC
+Text Label 2300 3700 0    50   ~ 0
+SPI1_SCK
+Wire Wire Line
+	2700 2300 2300 2300
+Wire Wire Line
+	2700 2400 2300 2400
+Wire Wire Line
+	2700 2500 2300 2500
+Wire Wire Line
+	2700 2600 2300 2600
+Wire Wire Line
+	2700 2700 2300 2700
+Wire Wire Line
+	2700 2800 2300 2800
+Wire Wire Line
+	2700 2900 2300 2900
+Wire Wire Line
+	2700 3000 2300 3000
+Wire Wire Line
+	2700 3100 2300 3100
+Wire Wire Line
+	2700 3200 2300 3200
+Wire Wire Line
+	2700 3300 2300 3300
+Wire Wire Line
+	2700 3400 2300 3400
+Wire Wire Line
+	2700 3500 2300 3500
+Wire Wire Line
+	2700 3600 2300 3600
+Wire Wire Line
+	2700 3700 2300 3700
+Wire Wire Line
+	1500 2300 1000 2300
+Wire Wire Line
+	1500 2400 1000 2400
+Wire Wire Line
+	1500 2500 1000 2500
+Wire Wire Line
+	1500 2600 1000 2600
+Wire Wire Line
+	1500 2700 1000 2700
+Wire Wire Line
+	1500 2800 1000 2800
+Wire Wire Line
+	1500 2900 1000 2900
+Wire Wire Line
+	1500 3000 1000 3000
+Wire Wire Line
+	1500 3100 1000 3100
+Wire Wire Line
+	1500 3200 1000 3200
+Wire Wire Line
+	1500 3300 1000 3300
+Wire Wire Line
+	1500 3400 1000 3400
+Wire Wire Line
+	1500 3500 1000 3500
+Wire Wire Line
+	1500 3600 1000 3600
+Wire Wire Line
+	1500 3700 1000 3700
+Wire Wire Line
+	8000 5350 7700 5350
+Wire Wire Line
+	8000 5250 7700 5250
+Wire Wire Line
+	8000 5150 7700 5150
+Wire Wire Line
+	8000 5450 7700 5450
+NoConn ~ 8800 4950
+NoConn ~ 8800 5050
+NoConn ~ 8800 5250
+NoConn ~ 8800 5350
+NoConn ~ 8800 5450
+NoConn ~ 8800 5550
+NoConn ~ 8000 5550
+Wire Wire Line
+	8000 4950 7700 4950
+Wire Wire Line
+	7700 4950 7700 4750
+$Comp
+L Device:R R?
+U 1 1 60E5A043
+P 7500 4700
+F 0 "R?" H 7570 4746 50  0000 L CNN
+F 1 "R" H 7570 4655 50  0000 L CNN
+F 2 "" V 7430 4700 50  0001 C CNN
+F 3 "~" H 7500 4700 50  0001 C CNN
+	1    7500 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 4550 7500 4550
+$Comp
+L power:GND #PWR?
+U 1 1 60E5B9B8
+P 7500 4850
+F 0 "#PWR?" H 7500 4600 50  0001 C CNN
+F 1 "GND" H 7505 4677 50  0001 C CNN
+F 2 "" H 7500 4850 50  0001 C CNN
+F 3 "" H 7500 4850 50  0001 C CNN
+	1    7500 4850
+	1    0    0    -1  
+$EndComp
+Text Label 7500 4550 0    50   ~ 0
+SDN_4464
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 60E5C977
+P 1900 4700
+F 0 "Q?" H 2104 4746 50  0000 L CNN
+F 1 "2N7002" H 2104 4655 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2100 4625 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 1900 4700 50  0001 L CNN
+	1    1900 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABGR D?
+U 1 1 60E5FC11
+P 2900 4700
+F 0 "D?" H 2900 5197 50  0000 C CNN
+F 1 "LED_ABGR" H 2900 5106 50  0000 C CNN
+F 2 "" H 2900 4650 50  0001 C CNN
+F 3 "~" H 2900 4650 50  0001 C CNN
+	1    2900 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 60E6402B
+P 1900 5350
+F 0 "Q?" H 2104 5396 50  0000 L CNN
+F 1 "2N7002" H 2104 5305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2100 5275 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 1900 5350 50  0001 L CNN
+	1    1900 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 60E65824
+P 1900 5950
+F 0 "Q?" H 2104 5996 50  0000 L CNN
+F 1 "2N7002" H 2104 5905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2100 5875 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 1900 5950 50  0001 L CNN
+	1    1900 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x15 J?
+U 1 1 60E6951B
+P 1700 1450
+F 0 "J?" H 1780 1492 50  0000 L CNN
+F 1 "Conn_01x15" H 1780 1401 50  0000 L CNN
+F 2 "" H 1700 1450 50  0001 C CNN
+F 3 "~" H 1700 1450 50  0001 C CNN
+	1    1700 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x15 J?
+U 1 1 60E69521
+P 2900 1450
+F 0 "J?" H 2980 1492 50  0000 L CNN
+F 1 "Conn_01x15" H 2980 1401 50  0000 L CNN
+F 2 "" H 2900 1450 50  0001 C CNN
+F 3 "~" H 2900 1450 50  0001 C CNN
+	1    2900 1450
+	1    0    0    -1  
+$EndComp
+Text Label 1000 750  0    50   ~ 0
+USART1_TX
+Text Label 1000 850  0    50   ~ 0
+USART1_RX
+Text Label 1000 950  0    50   ~ 0
+RESET
+Text Label 1000 1050 0    50   ~ 0
+GND
+Text Label 1000 1150 0    50   ~ 0
+D2
+Text Label 1000 1250 0    50   ~ 0
+D3
+Text Label 1000 1350 0    50   ~ 0
+D4
+Text Label 1000 1450 0    50   ~ 0
+D5
+Text Label 1000 1550 0    50   ~ 0
+D6
+Text Label 1000 1650 0    50   ~ 0
+D7
+Text Label 1000 1750 0    50   ~ 0
+D8
+Text Label 1000 1850 0    50   ~ 0
+D9
+Text Label 1000 1950 0    50   ~ 0
+SPI1_CS
+Text Label 1000 2050 0    50   ~ 0
+SPI1_MOSI
+Text Label 1000 2150 0    50   ~ 0
+SPI1_MISO
+Text Label 2300 750  0    50   ~ 0
+VIN
+Text Label 2300 850  0    50   ~ 0
+GND
+Text Label 2300 950  0    50   ~ 0
+RESET
+Text Label 2300 1050 0    50   ~ 0
++5VDC
+Text Label 2300 1150 0    50   ~ 0
+A7
+Text Label 2300 1250 0    50   ~ 0
+A6
+Text Label 2300 1350 0    50   ~ 0
+A5
+Text Label 2300 1450 0    50   ~ 0
+A4
+Text Label 2300 1550 0    50   ~ 0
+A3
+Text Label 2300 1650 0    50   ~ 0
+A2
+Text Label 2300 1750 0    50   ~ 0
+A1
+Text Label 2300 1850 0    50   ~ 0
+A0
+Text Label 2300 1950 0    50   ~ 0
+AREF
+Text Label 2300 2050 0    50   ~ 0
++3V3DC
+Text Label 2300 2150 0    50   ~ 0
+SPI1_SCK
+Wire Wire Line
+	2700 750  2300 750 
+Wire Wire Line
+	2700 850  2300 850 
+Wire Wire Line
+	2700 950  2300 950 
+Wire Wire Line
+	2700 1050 2300 1050
+Wire Wire Line
+	2700 1150 2300 1150
+Wire Wire Line
+	2700 1250 2300 1250
+Wire Wire Line
+	2700 1350 2300 1350
+Wire Wire Line
+	2700 1450 2300 1450
+Wire Wire Line
+	2700 1550 2300 1550
+Wire Wire Line
+	2700 1650 2300 1650
+Wire Wire Line
+	2700 1750 2300 1750
+Wire Wire Line
+	2700 1850 2300 1850
+Wire Wire Line
+	2700 1950 2300 1950
+Wire Wire Line
+	2700 2050 2300 2050
+Wire Wire Line
+	2700 2150 2300 2150
+Wire Wire Line
+	1500 750  1000 750 
+Wire Wire Line
+	1500 850  1000 850 
+Wire Wire Line
+	1500 950  1000 950 
+Wire Wire Line
+	1500 1050 1000 1050
+Wire Wire Line
+	1500 1150 1000 1150
+Wire Wire Line
+	1500 1250 1000 1250
+Wire Wire Line
+	1500 1350 1000 1350
+Wire Wire Line
+	1500 1450 1000 1450
+Wire Wire Line
+	1500 1550 1000 1550
+Wire Wire Line
+	1500 1650 1000 1650
+Wire Wire Line
+	1500 1750 1000 1750
+Wire Wire Line
+	1500 1850 1000 1850
+Wire Wire Line
+	1500 1950 1000 1950
+Wire Wire Line
+	1500 2050 1000 2050
+Wire Wire Line
+	1500 2150 1000 2150
+Text Notes 3100 850  0    50   ~ 0
+Connectors duplicated to provide duplicate pins for extended functionality
+Text Notes 3100 1000 0    50   ~ 0
+Pin connections suit STM32 Nucleo L432KC or Arduino Nano V3
 $EndSCHEMATC
