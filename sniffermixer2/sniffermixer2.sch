@@ -1,0 +1,375 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 60E01B36
+P 9950 1300
+F 0 "BT?" H 10068 1396 50  0000 L CNN
+F 1 "Battery_Cell" H 10068 1305 50  0000 L CNN
+F 2 "" V 9950 1360 50  0001 C CNN
+F 3 "~" V 9950 1360 50  0001 C CNN
+	1    9950 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 60E02C2D
+P 9950 1600
+F 0 "BT?" H 10068 1696 50  0000 L CNN
+F 1 "Battery_Cell" H 10068 1605 50  0000 L CNN
+F 2 "" V 9950 1660 50  0001 C CNN
+F 3 "~" V 9950 1660 50  0001 C CNN
+	1    9950 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper JP?
+U 1 1 60E03B36
+P 9650 1100
+F 0 "JP?" H 9650 1364 50  0000 C CNN
+F 1 "Jumper" H 9650 1273 50  0000 C CNN
+F 2 "" H 9650 1100 50  0001 C CNN
+F 3 "~" H 9650 1100 50  0001 C CNN
+	1    9650 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60E04305
+P 9950 1700
+F 0 "#PWR?" H 9950 1450 50  0001 C CNN
+F 1 "GND" H 9955 1527 50  0000 C CNN
+F 2 "" H 9950 1700 50  0001 C CNN
+F 3 "" H 9950 1700 50  0001 C CNN
+	1    9950 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L RF:ADE-6 U?
+U 1 1 60E05036
+P 8800 3250
+F 0 "U?" H 8800 3667 50  0000 C CNN
+F 1 "ADE-1" H 8800 3576 50  0000 C CNN
+F 2 "RF_Mini-Circuits:Mini-Circuits_CD542_LandPatternPL-052" H 8875 2875 50  0001 C CNN
+F 3 "www.minicircuits.com/pdfs/ADE-6.pdf" H 8975 2975 50  0001 C CNN
+	1    8800 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L RF:Si4464 U?
+U 1 1 60E0688A
+P 8400 5050
+F 0 "U?" H 8650 5850 50  0000 C CNN
+F 1 "Si4464" H 8750 5750 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.6x2.6mm_ThermalVias" H 8400 6250 50  0001 C CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/Si4464-63-61-60.pdf" H 8100 4950 50  0001 C CNN
+	1    8400 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x15 J?
+U 1 1 60E089F9
+P 4450 3000
+F 0 "J?" H 4530 3042 50  0000 L CNN
+F 1 "Conn_01x15" H 4530 2951 50  0000 L CNN
+F 2 "" H 4450 3000 50  0001 C CNN
+F 3 "~" H 4450 3000 50  0001 C CNN
+	1    4450 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x15 J?
+U 1 1 60E0A0A8
+P 3400 3000
+F 0 "J?" H 3480 3042 50  0000 L CNN
+F 1 "Conn_01x15" H 3480 2951 50  0000 L CNN
+F 2 "" H 3400 3000 50  0001 C CNN
+F 3 "~" H 3400 3000 50  0001 C CNN
+	1    3400 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60E0BFEC
+P 8600 3650
+F 0 "#PWR?" H 8600 3400 50  0001 C CNN
+F 1 "GND" H 8605 3477 50  0000 C CNN
+F 2 "" H 8600 3650 50  0001 C CNN
+F 3 "" H 8600 3650 50  0001 C CNN
+	1    8600 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 60E0C3A7
+P 9400 3250
+F 0 "J?" H 9480 3242 50  0000 L CNN
+F 1 "Conn_01x02" H 9480 3151 50  0000 L CNN
+F 2 "" H 9400 3250 50  0001 C CNN
+F 3 "~" H 9400 3250 50  0001 C CNN
+	1    9400 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 60E0CCE0
+P 8200 3250
+F 0 "J?" H 8118 3467 50  0000 C CNN
+F 1 "Conn_01x02" H 8118 3376 50  0000 C CNN
+F 2 "" H 8200 3250 50  0001 C CNN
+F 3 "~" H 8200 3250 50  0001 C CNN
+	1    8200 3250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60E0DA2D
+P 8400 3350
+F 0 "#PWR?" H 8400 3100 50  0001 C CNN
+F 1 "GND" H 8405 3177 50  0001 C CNN
+F 2 "" H 8400 3350 50  0001 C CNN
+F 3 "" H 8400 3350 50  0001 C CNN
+	1    8400 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60E0DF9C
+P 9200 3350
+F 0 "#PWR?" H 9200 3100 50  0001 C CNN
+F 1 "GND" H 9205 3177 50  0001 C CNN
+F 2 "" H 9200 3350 50  0001 C CNN
+F 3 "" H 9200 3350 50  0001 C CNN
+	1    9200 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60E10C28
+P 8400 5750
+F 0 "#PWR?" H 8400 5500 50  0001 C CNN
+F 1 "GND" H 8405 5577 50  0001 C CNN
+F 2 "" H 8400 5750 50  0001 C CNN
+F 3 "" H 8400 5750 50  0001 C CNN
+	1    8400 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L_Core_Ferrite L?
+U 1 1 60E11940
+P 8950 4400
+F 0 "L?" H 9050 4500 50  0000 L CNN
+F 1 "L_Core_Ferrite" H 9000 4600 50  0001 L CNN
+F 2 "" H 8950 4400 50  0001 C CNN
+F 3 "~" H 8950 4400 50  0001 C CNN
+	1    8950 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60E129B6
+P 9200 4550
+F 0 "C?" V 9000 4650 50  0000 C CNN
+F 1 "C" V 9100 4650 50  0000 C CNN
+F 2 "" H 9238 4400 50  0001 C CNN
+F 3 "~" H 9200 4550 50  0001 C CNN
+	1    9200 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L_Core_Ferrite L?
+U 1 1 60E13161
+P 9550 4550
+F 0 "L?" V 9750 4600 50  0000 L CNN
+F 1 "L_Core_Ferrite" V 9650 4150 50  0001 L CNN
+F 2 "" H 9550 4550 50  0001 C CNN
+F 3 "~" H 9550 4550 50  0001 C CNN
+	1    9550 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60E153BC
+P 9700 4700
+F 0 "C?" V 9500 4800 50  0000 C CNN
+F 1 "C" V 9600 4800 50  0000 C CNN
+F 2 "" H 9738 4550 50  0001 C CNN
+F 3 "~" H 9700 4700 50  0001 C CNN
+	1    9700 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:L_Core_Ferrite L?
+U 1 1 60E15B45
+P 9850 4550
+F 0 "L?" V 10050 4600 50  0000 L CNN
+F 1 "L_Core_Ferrite" V 9950 4150 50  0001 L CNN
+F 2 "" H 9850 4550 50  0001 C CNN
+F 3 "~" H 9850 4550 50  0001 C CNN
+	1    9850 4550
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9700 4550
+$Comp
+L Device:C C?
+U 1 1 60E1636B
+P 10000 4700
+F 0 "C?" V 9800 4800 50  0000 C CNN
+F 1 "C" V 9900 4800 50  0000 C CNN
+F 2 "" H 10038 4550 50  0001 C CNN
+F 3 "~" H 10000 4700 50  0001 C CNN
+	1    10000 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60E1794D
+P 9400 4700
+F 0 "C?" V 9200 4800 50  0000 C CNN
+F 1 "C" V 9300 4800 50  0000 C CNN
+F 2 "" H 9438 4550 50  0001 C CNN
+F 3 "~" H 9400 4700 50  0001 C CNN
+	1    9400 4700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9400 4550 9350 4550
+Connection ~ 9400 4550
+Wire Wire Line
+	9050 4550 8950 4550
+Wire Wire Line
+	8950 4550 8800 4550
+Connection ~ 8950 4550
+Wire Wire Line
+	10000 4550 10300 4550
+Wire Wire Line
+	10300 4550 10300 3650
+Wire Wire Line
+	10300 3650 8800 3650
+Connection ~ 10000 4550
+$Comp
+L power:GND #PWR?
+U 1 1 60E192AF
+P 9400 4850
+F 0 "#PWR?" H 9400 4600 50  0001 C CNN
+F 1 "GND" H 9405 4677 50  0001 C CNN
+F 2 "" H 9400 4850 50  0001 C CNN
+F 3 "" H 9400 4850 50  0001 C CNN
+	1    9400 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60E196A0
+P 9700 4850
+F 0 "#PWR?" H 9700 4600 50  0001 C CNN
+F 1 "GND" H 9705 4677 50  0001 C CNN
+F 2 "" H 9700 4850 50  0001 C CNN
+F 3 "" H 9700 4850 50  0001 C CNN
+	1    9700 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60E199B2
+P 10000 4850
+F 0 "#PWR?" H 10000 4600 50  0001 C CNN
+F 1 "GND" H 10005 4677 50  0001 C CNN
+F 2 "" H 10000 4850 50  0001 C CNN
+F 3 "" H 10000 4850 50  0001 C CNN
+	1    10000 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 4250 8500 4250
+Wire Wire Line
+	8500 4250 8500 4350
+Wire Wire Line
+	8500 4250 8400 4250
+Wire Wire Line
+	8400 4250 8400 4350
+Connection ~ 8500 4250
+$Comp
+L Device:C C?
+U 1 1 60E272C5
+P 8250 4250
+F 0 "C?" V 8050 4350 50  0000 C CNN
+F 1 "C" V 8150 4350 50  0000 C CNN
+F 2 "" H 8288 4100 50  0001 C CNN
+F 3 "~" H 8250 4250 50  0001 C CNN
+	1    8250 4250
+	0    1    1    0   
+$EndComp
+Connection ~ 8400 4250
+$Comp
+L Device:C C?
+U 1 1 60E2785B
+P 8650 4050
+F 0 "C?" V 8450 4150 50  0000 C CNN
+F 1 "C" V 8550 4150 50  0000 C CNN
+F 2 "" H 8688 3900 50  0001 C CNN
+F 3 "~" H 8650 4050 50  0001 C CNN
+	1    8650 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60E27FAE
+P 8100 4250
+F 0 "#PWR?" H 8100 4000 50  0001 C CNN
+F 1 "GND" H 8105 4077 50  0001 C CNN
+F 2 "" H 8100 4250 50  0001 C CNN
+F 3 "" H 8100 4250 50  0001 C CNN
+	1    8100 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60E28451
+P 8800 4050
+F 0 "#PWR?" H 8800 3800 50  0001 C CNN
+F 1 "GND" H 8805 3877 50  0001 C CNN
+F 2 "" H 8800 4050 50  0001 C CNN
+F 3 "" H 8800 4050 50  0001 C CNN
+	1    8800 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 4250 8500 4050
+$Comp
+L Device:Crystal Y?
+U 1 1 60E29632
+P 7850 4550
+F 0 "Y?" H 7850 4374 50  0000 C CNN
+F 1 "Crystal" V 7895 4681 50  0001 L CNN
+F 2 "" H 7850 4550 50  0001 C CNN
+F 3 "~" H 7850 4550 50  0001 C CNN
+	1    7850 4550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8000 4750 7700 4750
+Wire Wire Line
+	7700 4750 7700 4550
+Text Label 7700 5150 0    50   ~ 0
+SCLK
+Text Label 7700 5250 0    50   ~ 0
+SDI
+Text Label 7700 5350 0    50   ~ 0
+SDO
+Text Label 7700 5450 0    50   ~ 0
+~CS
+$EndSCHEMATC
