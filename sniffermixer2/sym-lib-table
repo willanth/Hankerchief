@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name outside_std_libs_parts)(type Legacy)(uri ${KIPRJMOD}/outside_std_libs_parts.lib)(options "")(descr ""))
+  (lib (name sniffermixer2-rescue)(type Legacy)(uri ${KIPRJMOD}/sniffermixer2-rescue.lib)(options "")(descr ""))
+)
